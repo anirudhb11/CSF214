@@ -1,0 +1,37 @@
+A surgeon under the consent the consent of mother performs heart surgery of boy and boy dies dies during surgery.
+final_guilty([parent(a,b),parent(b,c),parentpermission(surgeon,c,a)]).
+
+A mad and drugged person abc attacks his doctor. 
+final_guilty([mad(abc),drugged(abc)]).
+
+Judge X of supreme court orders hanging of a rape victim vijay
+final_guilty([bound_or_believebound(court_judge,vijay,rape),offence(rape)]).
+
+A firefighter drops a child from 4 th floor of house on fire to save a child
+final_guilty([doing_good_action(firefighter,child),consent(child)]).
+
+
+A police officer intentionally aids the kills an innocent officer 
+final_guilty([purposely_help(a,b,murder),public_servant(a),public_servant(b),offence(murder),prevent_obligation(A,murder)]).
+
+P instigates R to threaten to stab a person but R stabs that person and that person dies which is not intention of P
+final_guilty([instigation(p,r,threaten),as_result_of(threaten,kill),perform(r,kill),aware_of(p,threaten,kill),unintentionally(p,threaten,kill),offence(threaten)]).
+
+ P instigates R to kidnap someone but R murders that person (misinterprets)  then P is punishable.
+final_guilty([instigation(p,r,threaten),as_result_of(threaten,kill),perform(r,kill),aware_of_result(p,threaten,kill),unintentionally(p,r,kill),offence(threaten)]).
+
+
+rohan was found with a rifle and was found to be aware that it was used in depredation against srilanka which has alliance with india.
+final_guilty([procure_instrument('rohan'),aware_of_war_depredate('rohan','srilanka'),existance_of_alliance('srilanka',gov_of_ind)]).
+
+afzal was found guilty of conspiring a war against government of india using criminal force
+final_guilty([action('afzal',gov_of_ind,war),create_conspiracy('afzal',gov_of_ind,wage_war),thing_used('afzal',gov_of_ind,criminal_force)]).
+
+people at dera harboured baba and showed resistence against government of india.
+final_guilty([war_or_state_prisoner('dera'),harbour('dera','baba'),action('dera',gov_of_ind,resistance)]).
+
+villagers of baster were found of hiding war plan by maoists against government of india.
+final_guilty([hide_plan_war(villagers,gov_of_ind),aware_of_hiding_war_det(villagers,gov_of_ind)]).
+
+
+
